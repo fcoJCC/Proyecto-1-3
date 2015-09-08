@@ -1,0 +1,1 @@
+1.- seleccione o defina un conjunto de datos que pueda representarse como un grafo de 8 nodos y 12 aristas. Implemente en c las estructutas de datos apropiadas para representar este grafp. inicialicelas con los datos que ha preparado.
