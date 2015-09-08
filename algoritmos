@@ -1,0 +1,12 @@
+ 
+ DFS
+ 
+ Seleccionar cualquier vértice como punto de partida. Si hay otro vértice adyacente que no se ha visitado, se avanza, este vértice es el nuevo
+punto de partida y se llama recursivamente al procedimiento. Si queda algún vértice por visitar se toma como nuevo punto de partida y se vuelve a usar el procedimiento. Cuando no quedan vértices por visitar retrocedemos al vértice anteriormente visitado.
+
+BFS
+
+ Seleccionar cualquier vértice v como punto de partida. Se visitan los vértices adyacentes marcándolos como visitados, cuando no queden más vecinos
+nuevos del vértice actual (v) pasamos al siguiente vértice después de v en el orden original de aparición. Finalmente, se llegará a un vértice que no tiene nuevos vecinos y para el que no existe vértice siguiente, entonces habremos acabado
+
+
