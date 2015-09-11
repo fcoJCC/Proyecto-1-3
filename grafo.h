@@ -10,10 +10,26 @@
 
 
 typedef struct type_graph{
-  int cant_pymes;//basado en un conjunto de empresas de conocidos, puede ser la etiqueta que tenga.
-  int pasos;//cantidad de pasos que ha tomado hasta llegar al nodo actual.
-  char marca;//blanca"B"   gris"G"  negra"N", indicara el color actual.
+  int vecinos;//basado en un conjunto de empresas de conocidos, puede ser la etiqueta que tenga.
+  int distacia;//cantidad de pasos que ha tomado hasta llegar al nodo actual.
+  char color;//blanca"B"   gris"G"  negra"N", indicara el color actual.
   
 }grafo;
 
+//cargar matriz de un archivo
+int crear_matriz(){
+  int matriz_adj[tam][tam]={  //     Q R S T U V W X
+                              //     0 1 2 3 4 5 6 7
+                            /*Q 0*/ {0,1,0,0,0,0,0,0}
+                            /*R 1*/ {1,0,1,0,0,0,0,0}
+                            /*S 2*/ {0,1,0,1,0,0,0,0}
+                            /*T 3*/ {0,0,1,0,1,1,0,0}
+                            /*U 4*/ {0,0,0,1,0,1,1,1}
+                            /*V 5*/ {0,0,0,1,1,0,1,0}
+                            /*W 6*/ {0,0,0,0,1,1,0,1}
+                            /*X 7*/ {0,0,0,0,1,0,1,0}
+                      }
+  
+  return 0;
+}
 
