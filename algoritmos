@@ -1,12 +1,31 @@
- 
+ //---------------------------------------------------------------------------------------------------------
  DFS
  
  Seleccionar cualquier vértice como punto de partida. Si hay otro vértice adyacente que no se ha visitado, se avanza, este vértice es el nuevo
 punto de partida y se llama recursivamente al procedimiento. Si queda algún vértice por visitar se toma como nuevo punto de partida y se vuelve a usar el procedimiento. Cuando no quedan vértices por visitar retrocedemos al vértice anteriormente visitado.
-
+//---------------------------------------------------------------------------------------------------------
 BFS
 
  Seleccionar cualquier vértice v como punto de partida. Se visitan los vértices adyacentes marcándolos como visitados, cuando no queden más vecinos
 nuevos del vértice actual (v) pasamos al siguiente vértice después de v en el orden original de aparición. Finalmente, se llegará a un vértice que no tiene nuevos vecinos y para el que no existe vértice siguiente, entonces habremos acabado
 
+for cada vertice u e V[G] menos el INICIAL
+	grafo.vertice.color=B //rellenar de color blanco cada vertice
+	grafo.vertice.distancia=infinito dejar su distancia
+	grafo.vertice.vecinos=Null;
 
+grafo.vertice[s].color=g;//se tinta gris el inicial.
+grafo.vertice[s].distancia=0;
+grafo.vertice[s].vecinos=Null;
+
+cola_a_usar=inicializar;
+encolar(Cola,s);
+	while (!vacia_cola(Cola))
+		desencolar(u,Cola);
+			for cada vertice de la matriz adjunta[u]
+				if(grafo.vertice[v].color==white)
+					grafo.vertice[v].color==G //gris
+					grafo.vertice[v].distancia++;
+					grafo.vertice[v].vecino=grafo.vertice[u].vecino;
+					desencolar(Cola,v)
+			grafo.vertice[u].color=B //negro
