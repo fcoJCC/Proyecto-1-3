@@ -8,6 +8,7 @@
 #define STDLIB_H
 #endif
 
+#define infinito 9999
 
 typedef struct type_graph{
   int vecinos;//basado en un conjunto de empresas de conocidos, puede ser la etiqueta que tenga.
@@ -15,6 +16,16 @@ typedef struct type_graph{
   char color;//blanca"B"   gris"G"  negra"N", indicara el color actual.
   
 }grafo;
+
+grafo *crear_grafo(){
+	grafo grafo_aux=(grafo*)malloc(sizeof(struct grafo));
+	grafo_aux.vecinos=NULL;	
+	grafo_aux.distancia=infinito;
+	grafo_aux.color=W;
+
+	return grafo_aux;	
+}
+
 
 //cargar matriz de un archivo
 int crear_matriz(){
