@@ -14,12 +14,15 @@
 #endif
 
 typedef struct tipo_cola{
+    int direccion_y,direccion_x;
     struct tipo_cola *sig, *pri, *ult;
 }Cola;
 //funcion que crea e inicializa una cola
 Cola *inicializar_cola(){
     Cola *aux_cola=(Cola *)malloc(sizeof(struct tipo_cola));
 
+    direccion_y=0;
+    direccion_x=0;
     aux_cola->primero=NULL;
     aux_cola->sgte=NULL;
     aux_cola->ultimo=NULL;
