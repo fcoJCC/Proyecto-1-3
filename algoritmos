@@ -3,6 +3,30 @@
  
  Seleccionar cualquier vértice como punto de partida. Si hay otro vértice adyacente que no se ha visitado, se avanza, este vértice es el nuevo
 punto de partida y se llama recursivamente al procedimiento. Si queda algún vértice por visitar se toma como nuevo punto de partida y se vuelve a usar el procedimiento. Cuando no quedan vértices por visitar retrocedemos al vértice anteriormente visitado.
+void dfs...
+FOR 	cada vertice de u(matriz adyacencia) V[G] (vertice del grafo)  
+		grafo.vertice[u].color=B // colorear  con blanco su cuadro
+		grafo.vertice[u].vecinos=NULL /
+		grafo.vertice[u].distancia=0;
+
+FOR     cada vertice de u(matriz adyacencia) V[G](vertice del grafo) 
+		if(grafo.vertice[u].color==B)//"B"color blanco
+			dfs_visit(u);
+
+dfs_visit(int u)...
+	grafo.vertice[u].color=G;
+	tiempo++;
+	grafo.vertice[u].distancia=tiempo;
+	FOR	cada vertice (v) de la matriz adj[u]
+			if (grafo.vertice[v].color==B)//"B" blanco
+				grafo.vertice[v].vecino=grafo.vertice[u].vecino;
+				def_visit(v);
+
+		grafo.vertice[u].color=N//"N" nigga' stole me pseudocode :3
+
+	distancia_final[u]=tiempo+1
+
+
 
 
 //---------------------------------------------------------------------------------------------------------
