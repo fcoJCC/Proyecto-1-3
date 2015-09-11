@@ -3,6 +3,8 @@
  
  Seleccionar cualquier vértice como punto de partida. Si hay otro vértice adyacente que no se ha visitado, se avanza, este vértice es el nuevo
 punto de partida y se llama recursivamente al procedimiento. Si queda algún vértice por visitar se toma como nuevo punto de partida y se vuelve a usar el procedimiento. Cuando no quedan vértices por visitar retrocedemos al vértice anteriormente visitado.
+
+
 //---------------------------------------------------------------------------------------------------------
 BFS
 
