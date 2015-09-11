@@ -33,3 +33,19 @@ int crear_matriz(){
   return 0;
 }
 
+int imprimir matriz(int matriz[tam][tam]){
+  int i,j;
+  for (j=0;j<=7;j++){
+    for(i=0;i<=7;i++){
+      if(matriz[j][i]==0){
+        printf("-");
+      }
+      else 
+        printf("O");
+    }
+    printf("\n");
+  }
+  return 0;
+}
+
+
