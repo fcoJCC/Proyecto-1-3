@@ -38,6 +38,23 @@ int vacia_cola(Cola *cola){
    return 0; 
 }
 
+int encolar(Cola *new_cola){
+    Cola *aux=(new_Cola*)malloc(sizeof(struct tipo_cola));
+    aux->sig=NULL;
+
+    if(unaCola->primero==NULL){
+        unaCola->primero=unaCola->ult=aux;
+        unaCola->sgte=NULL;
+        
+    }else{
+        new_cola *ventana=new_cola->ult;
+        new_cola->ult->sig=casilla;
+        new_cola->ult=casilla;
+
+    }
+    return 0;
+}
+
 
 
 
